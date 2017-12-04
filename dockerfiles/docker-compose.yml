@@ -20,7 +20,7 @@ services:
         expose:
             - 8090
         ports:
-            - 8090:8090
+            - 8090
         networks:
             - sensor-reciever-network
         links:
