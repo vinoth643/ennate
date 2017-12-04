@@ -1,0 +1,5 @@
+FROM java:8
+MAINTAINER vinoth.com
+COPY jar/codechallenge-0.0.1-SNAPSHOT.jar /opt/sensor-reciever/lib/
+ENTRYPOINT ["/usr/bin/java"]
+CMD ["-jar", "-Dmongodb.server.uri=mongodb://mongo", "-Dmongodb.db.name=testvinoth", "-Dserver.port=8090", "/opt/sensor-reciever/lib/codechallenge-0.0.1-SNAPSHOT.jar"]
