@@ -19,6 +19,8 @@ Steps to run the application:
      <br />#Docker Bin Directory#: docker-compose build
 7. Run the docker compose up command to start the containers for Restful API, Sensor Emulator and MongoDB Datastore. As part of this step, the sensor emulator will send the records to the sensor reciever Restful API.
      <br />#Docker Bin Directory#: docker-compose up -d
+8. Run the docker compose scale command to increase the Restful API servers to 2
+     <br />#Docker Bin Directory#: docker-compose scale sensor-reciever-server=2
 8. Run the docker compose down command to stop all the servers
      <br />#Docker Bin Directory#: docker-compose down
 
